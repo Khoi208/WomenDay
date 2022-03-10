@@ -26,6 +26,13 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                 <!-- <audio id="player" autoplay loop>
                     <source src="./music.mp3" type="audio/mp3">
                 </audio> -->
+	      </div>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
 			<div class="content">
 				<div class="grid">
 					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover" ></div></div>
