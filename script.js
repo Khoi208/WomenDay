@@ -1,16 +1,3 @@
-// Link of background music - set 'null' if you dont want to play background music
-var bgMusicURL = 'https://youtu.be/M1OJ2LdrRy4';
-var bgMusicControls = true; // Show UI music control
-
-// add background music
-if (bgMusicURL) {
-  document.getElementById('music-container').innerHTML += `
-<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
-<p>If you are reading this, it is because your browser does not support the audio element.</p>
-</audio>
-`;
-}
-
 // modules are defined as an array
 // [ module function, map of requires ]
 //
